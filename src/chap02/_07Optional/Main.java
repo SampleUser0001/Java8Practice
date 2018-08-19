@@ -22,7 +22,7 @@ public class Main {
 
 		String contents = new String( Files.readAllBytes(input));
 		List<String> words = (List) Arrays.asList(contents.split("\\P{L}+"));
-		Optional<String> largest = words.stream().max();
+		Optional<String> largest = words.stream().max(null);
 
 // 		Stream<String> ifPresentUse = .stream();
 // 		Optional<String> largest = ;
